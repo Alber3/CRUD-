@@ -1,6 +1,5 @@
 <?php
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = (isset($_POST["id"]) && $_POST["id"] != null) ? $_POST["id"] : "";
     $nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
@@ -133,7 +132,7 @@ if (isset($_REQUEST["act"]) && $_REQUEST["act"] == "del" && $id != "") {
                Número do discord:
                <input type="text" name="celular" <?php
  
-               // Preenche o celular no campo celular com um valor "value"
+              
                if (isset($celular) && $celular != null || $celular != "") {
                    echo "value=\"{$celular}\"";
                }
